@@ -1,9 +1,0 @@
-id,dataset,context,statement,premises-FOL,conclusion-FOL,given_info,question,facts,rules,query,label
-rt_sample_1,RuleTaker,Facts: Bob is young. Bob is blue. Rules: If someone is young then they are smart. If someone is smart and blue then they are kind.,Bob is kind.,,,,,,,,True
-rt_sample_2,RuleTaker,Facts: Charlie is cold. Charlie is green. Rules: If someone is red then they are round. If someone is cold then they are quiet.,Charlie is round.,,,,,,,,False
-folio_sample_1,FOLIO,,,"[""∀x (Student(x) → Studies(x))"", ""∀x (Studies(x) → Learns(x))"", ""Student(alice)""]",Learns(alice),,,,,,True
-folio_sample_2,FOLIO,,,"[""∀x (Bird(x) → Flies(x))"", ""Penguin(tux)"", ""¬Flies(tux)""]",Bird(tux),,,,,,False
-cb_sample_1,CounterBench,,,,,"We know that rain causes wet_ground, and wet_ground causes slippery_road. We observed rain.",Would slippery_road occur if not rain?,,,,False
-cb_sample_2,CounterBench,,,,,We know that alarm causes wake_up. We observed not alarm.,Would wake_up occur if alarm?,,,,True
-horn_sample_1,GenericHorn,,,,,,,"[[""engineer"", ""vaibhav""], [""hardworking"", ""vaibhav""]]","[[[[""engineer"", ""?x""], [""hardworking"", ""?x""]], [""successful"", ""?x""]]]","[""successful"", ""vaibhav""]",True
-horn_sample_2,GenericHorn,,,,,,,"[[""cat"", ""whiskers""]]","[[[[""dog"", ""?x""]], [""barks"", ""?x""]]]","[""barks"", ""whiskers""]",False
